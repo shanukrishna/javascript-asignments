@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>asgmnt 25</title>
+	<script>
+	var image_tracker='f';
+	function change(){
+		var image=document.getElementById('flower');
+		if(image_tracker=='f'){
+		image.src="des.jpg";
+       image_tracker='d';
+	}else{
+		image.src="flow.jpg";
+		image_tracker='f';
+	}
+}
+	</script>
+</head>
+<body>
+<img src="flow.jpg" alt="desktop logo" id="flower" onclick="change()">
+</body>
+</html>

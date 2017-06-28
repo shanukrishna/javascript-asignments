@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>asgmnt 12</title>
+	<script>
+
+	var a="apple inside function";
+
+	function global(){
+		var b="apple outside function";
+		document.write("<h2>Global</h2>");
+		document.write(a+"<br><br>"+b+"<br><br>");
+	}
+
+	function local(){
+		document.write("<h2>Local</h2>"+a);
+	}
+
+	global();
+	local();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

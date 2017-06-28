@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title> asgmnt 27</title>
+<script>
+function login()
+	{
+		var welcome_para=document.getElementById("welcome");
+		var firstname=document.getElementById("first_name");	
+		var lastname=document.getElementById("last_name");
+		var email=document.getElementById("email_id");
+		welcome_para.innerHTML="welcome " + firstname.value+" "+lastname.value+". My email id is "+email.value;
+	}
+</script>
+</head>
+<body>
+	<form name="form_reg" action="https://www.google.co.in" method="get">
+	
+		<table width="50%" border="0" cellpadding="5px">
+		<tr>
+			<td>First Name : </td>
+			<td><input type="text" id="first_name"></td>
+		</tr>
+		<tr>
+			<td>Last Name : </td>
+			<td><input type="text" id="last_name"></td>
+		</tr>
+		<tr>
+			<td>Email : </td>
+			<td><input type="password" id="email_id"></td>
+		</tr> 
+		<tr>
+			<td>Password : </td>
+			<td><input type="text" id="password"></td>
+	</tr>
+	<tr>
+			<td><input type="button" value="Sign Up" id="button" onclick="login();"></td>
+	</tr>
+</table>
+</form>
+<p id="welcome"></p>
+</body>
+</html>
