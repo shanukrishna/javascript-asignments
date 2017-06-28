@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title> asgmnt 32</title>
+<script>
+function is_checked()
+	{ 
+		var yes_checked=document.getElementById("male").checked;
+		var no_checked=document.getElementById("female").checked;
+
+		if(yes_checked==false && no_checked==false)
+		{
+		
+			var str = "please choose your gender";
+			document.getElementById("radiobutton").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("radiobutton").innerHTML=null;
+		}
+	}
+	</script>
+
+	<style>
+	#body{
+		background-color: #99ffff;
+		border:1px solid #99ffff;
+	}
+	</style>
+</head>
+<body>
+	<form name="form_reg" action="" method="get">
+	<table id="body" border="0" cellpadding="10px" cellspacing="10px" width="30%">
+	<tr>
+		<th colspan="2" align="center"><font size="5px">Radio Button Validation</font></th>
+	<tr>
+			<td>Gender : </td>
+			<td><input type="radio" name="gender" value="male" id="male"> Male
+  				<input type="radio" name="gender" value="female" id="female"> Female
+  			</td>
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td><label id="radiobutton" style="color:red"></label></td>
+	<tr>	
+		<td></td>
+		<td><input type="button" value="Submit" id="button" onclick="is_checked();"/></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
